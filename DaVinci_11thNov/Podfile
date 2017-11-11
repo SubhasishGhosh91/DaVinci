@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'DaVinci' do
+pod 'SRKControls', '~> 3.0.1'
+pod 'ReachabilitySwift', :branch => 'develop'
+use_frameworks!
+end
+
+target 'DaVinciTests' do
+
+end
+
+target 'DaVinciUITests' do
+
+end
+

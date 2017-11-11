@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PinchCollectionViewCell" customModule="DaVinci" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-hZ-ndG">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" translatesAutoresizingMaskIntoConstraints="NO" id="T2y-rb-1rQ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="T2y-rb-1rQ" firstAttribute="leading" secondItem="dm0-hZ-ndG" secondAttribute="leading" id="JXG-cu-Cvl"/>
+                            <constraint firstItem="T2y-rb-1rQ" firstAttribute="top" secondItem="dm0-hZ-ndG" secondAttribute="top" id="Osh-d2-0VU"/>
+                            <constraint firstAttribute="trailing" secondItem="T2y-rb-1rQ" secondAttribute="trailing" id="QRp-8u-fcO"/>
+                            <constraint firstAttribute="bottom" secondItem="T2y-rb-1rQ" secondAttribute="bottom" id="RTs-aW-62d"/>
+                            <constraint firstItem="T2y-rb-1rQ" firstAttribute="centerY" secondItem="dm0-hZ-ndG" secondAttribute="centerY" id="Wpc-bz-R1c"/>
+                            <constraint firstItem="T2y-rb-1rQ" firstAttribute="centerX" secondItem="dm0-hZ-ndG" secondAttribute="centerX" id="gs6-50-JH5"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="IJW-ew-LZ7"/>
+                        </connections>
+                    </scrollView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="dm0-hZ-ndG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4eF-aW-2tD"/>
+                <constraint firstAttribute="bottom" secondItem="dm0-hZ-ndG" secondAttribute="bottom" id="9di-L0-W63"/>
+                <constraint firstItem="dm0-hZ-ndG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MTT-cb-cyS"/>
+                <constraint firstItem="dm0-hZ-ndG" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="OwI-Od-jXH"/>
+                <constraint firstAttribute="trailing" secondItem="dm0-hZ-ndG" secondAttribute="trailing" id="vbr-pd-Pb4"/>
+                <constraint firstItem="dm0-hZ-ndG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wJt-v2-ScA"/>
+            </constraints>
+            <connections>
+                <outlet property="cellImage" destination="T2y-rb-1rQ" id="FGv-UI-8tg"/>
+                <outlet property="pinchScrollView" destination="dm0-hZ-ndG" id="RYE-eh-ciZ"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dummy" width="197" height="279"/>
+    </resources>
+</document>

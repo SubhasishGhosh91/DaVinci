@@ -1,0 +1,12 @@
+PODS:
+  - SRKControls (3.0.5):
+    - SRKControls/Controls (= 3.0.5)
+  - SRKControls/Controls (3.0.5)
+
+DEPENDENCIES:
+  - SRKControls (~> 3.0.1)
+
+SPEC CHECKSUMS:
+  SRKControls: ef82f31f3bdea31ab8ec5d36057f553c8b8815a5
+
+COCOAPODS: 0.39.0

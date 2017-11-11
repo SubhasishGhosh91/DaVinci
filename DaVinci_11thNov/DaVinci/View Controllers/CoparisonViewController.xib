@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoparisonViewController" customModule="DaVinci" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewLeft" destination="4TX-6p-Faw" id="Tm0-jS-mao"/>
+                <outlet property="collectionViewRight" destination="Ehh-jh-DOj" id="Woi-QP-9bG"/>
+                <outlet property="leftStyle" destination="CdR-PX-pAx" id="3jo-r9-4zL"/>
+                <outlet property="rightStyle" destination="ehZ-Yj-K8E" id="I9H-w5-KMj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ehh-jh-DOj">
+                    <rect key="frame" x="189.5" y="64" width="185.5" height="603"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="C4g-y7-aLG">
+                        <size key="itemSize" width="512" height="704"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="i1m-tL-EF4"/>
+                        <outlet property="delegate" destination="-1" id="bWW-xa-9PB"/>
+                    </connections>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4TX-6p-Faw">
+                    <rect key="frame" x="0.0" y="64" width="185.5" height="603"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="x39-Oy-TjZ">
+                        <size key="itemSize" width="512" height="704"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="63" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="z4Y-Wb-7cn"/>
+                        <outlet property="delegate" destination="-1" id="wFc-KZ-RK6"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STYLE 41411" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-PX-pAx">
+                    <rect key="frame" x="-18.5" y="75" width="221.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="221" id="WEU-Uw-j16"/>
+                        <constraint firstAttribute="height" constant="21" id="neA-h9-uhk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtQ-bm-TUx">
+                    <rect key="frame" x="790" y="75" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STYLE 41511" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-Yj-K8E">
+                    <rect key="frame" x="172.5" y="75" width="221" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="221" id="FdN-Hm-oJh"/>
+                        <constraint firstAttribute="height" constant="21" id="YeQ-UF-u9J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4TX-6p-Faw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1OJ-qT-89R"/>
+                <constraint firstItem="4TX-6p-Faw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="COs-Wm-xcI"/>
+                <constraint firstItem="CdR-PX-pAx" firstAttribute="centerX" secondItem="4TX-6p-Faw" secondAttribute="centerX" id="Chy-aM-FL5"/>
+                <constraint firstAttribute="bottom" secondItem="4TX-6p-Faw" secondAttribute="bottom" id="ST5-sf-Qut"/>
+                <constraint firstItem="Ehh-jh-DOj" firstAttribute="width" secondItem="4TX-6p-Faw" secondAttribute="width" id="VYm-zT-f7c"/>
+                <constraint firstItem="Ehh-jh-DOj" firstAttribute="leading" secondItem="4TX-6p-Faw" secondAttribute="trailing" constant="4" id="ccj-HK-hyf"/>
+                <constraint firstItem="ehZ-Yj-K8E" firstAttribute="top" secondItem="Ehh-jh-DOj" secondAttribute="top" constant="11" id="dSh-zo-Pj3"/>
+                <constraint firstItem="ehZ-Yj-K8E" firstAttribute="centerX" secondItem="Ehh-jh-DOj" secondAttribute="centerX" id="etu-w0-vtS"/>
+                <constraint firstItem="CdR-PX-pAx" firstAttribute="top" secondItem="4TX-6p-Faw" secondAttribute="top" constant="11" id="hkO-cA-O9a"/>
+                <constraint firstAttribute="bottom" secondItem="Ehh-jh-DOj" secondAttribute="bottom" id="map-i9-rbm"/>
+                <constraint firstItem="Ehh-jh-DOj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="soN-Ow-OfC"/>
+                <constraint firstAttribute="trailing" secondItem="Ehh-jh-DOj" secondAttribute="trailing" id="tZz-j6-PDg"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

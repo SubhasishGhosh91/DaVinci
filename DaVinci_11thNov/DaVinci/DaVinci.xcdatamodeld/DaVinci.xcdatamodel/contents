@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Collections" representedClassName="Collections" syncable="YES">
+        <attribute name="created_on" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Color_manage" representedClassName=".Color_manage" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName=".Image" syncable="YES">
+        <attribute name="fileurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceurl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Order_items" representedClassName=".Order_items" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="product_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="style" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit_price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Orders" representedClassName=".Orders" syncable="YES">
+        <attribute name="bill_to" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="catelouge" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="complition_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_on" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="order_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="order_editable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_submitted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="po" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="salesman_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ship_to" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="short_order_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="store_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pricing_upcharge" representedClassName=".Pricing_upcharge" syncable="YES">
+        <attribute name="category_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="product_size" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Products" representedClassName=".Products" syncable="YES">
+        <attribute name="collection_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_on" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fabric" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="images" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_sellable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="primary_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="style" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Salesman" representedClassName=".Salesman" syncable="YES">
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_on" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_active" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Size_manage" representedClassName=".Size_manage" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Slider" representedClassName=".Slider" syncable="YES">
+        <attribute name="collection_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_on" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="product_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sort_order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Store" representedClassName=".Store" syncable="YES">
+        <attribute name="account_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_on" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_active" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_address3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipping_zip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Store_date" representedClassName=".Store_date" syncable="YES">
+        <attribute name="completion_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="end_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Collections" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Color_manage" positionX="-9" positionY="135" width="128" height="90"/>
+        <element name="Image" positionX="-9" positionY="135" width="128" height="75"/>
+        <element name="Order_items" positionX="-9" positionY="135" width="128" height="195"/>
+        <element name="Orders" positionX="36" positionY="189" width="128" height="30"/>
+        <element name="Pricing_upcharge" positionX="-36" positionY="99" width="128" height="105"/>
+        <element name="Products" positionX="-54" positionY="18" width="128" height="225"/>
+        <element name="Salesman" positionX="0" positionY="126" width="128" height="165"/>
+        <element name="Size_manage" positionX="0" positionY="144" width="128" height="75"/>
+        <element name="Slider" positionX="-18" positionY="108" width="128" height="150"/>
+        <element name="Store" positionX="18" positionY="162" width="128" height="375"/>
+        <element name="Store_date" positionX="-9" positionY="135" width="128" height="90"/>
+    </elements>
+</model>

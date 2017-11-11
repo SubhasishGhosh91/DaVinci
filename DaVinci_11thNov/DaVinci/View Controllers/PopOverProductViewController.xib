@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopOverProductViewController" customModule="DaVinci" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewProduct" destination="CqA-yI-ykt" id="FXU-Mm-zkh"/>
+                <outlet property="dismissButton" destination="pFF-UT-QRl" id="khk-j2-Ejd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="708" height="978"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CqA-yI-ykt">
+                    <rect key="frame" x="0.0" y="30" width="708" height="934"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5N6-uX-MvC">
+                        <size key="itemSize" width="250" height="300"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lJr-5d-WYC"/>
+                        <outlet property="delegate" destination="-1" id="HNe-kq-OTx"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFF-UT-QRl">
+                    <rect key="frame" x="668" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QIK-b3-WgI"/>
+                        <constraint firstAttribute="width" constant="40" id="Zhi-RV-ei3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" image="popover_cross">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CqA-yI-ykt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="4PG-FK-emm"/>
+                <constraint firstAttribute="trailing" secondItem="CqA-yI-ykt" secondAttribute="trailing" id="7oM-Wl-SBR"/>
+                <constraint firstAttribute="trailing" secondItem="pFF-UT-QRl" secondAttribute="trailing" id="ON4-uF-4or"/>
+                <constraint firstItem="CqA-yI-ykt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iQm-K6-8eF"/>
+                <constraint firstAttribute="bottom" secondItem="CqA-yI-ykt" secondAttribute="bottom" constant="14" id="sBi-Lo-jTg"/>
+                <constraint firstItem="pFF-UT-QRl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x10-0Q-g1c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="441" y="267"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popover_cross" width="60" height="60"/>
+    </resources>
+</document>

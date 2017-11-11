@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCollectionViewCell" customModule="DaVinci" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbJ-lI-vPY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xbJ-lI-vPY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="WX7-5o-mTX"/>
+                <constraint firstAttribute="bottom" secondItem="xbJ-lI-vPY" secondAttribute="bottom" id="X90-zN-dbJ"/>
+                <constraint firstItem="xbJ-lI-vPY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ffb-T6-Buc"/>
+                <constraint firstAttribute="trailing" secondItem="xbJ-lI-vPY" secondAttribute="trailing" id="lmS-pM-9EL"/>
+                <constraint firstItem="xbJ-lI-vPY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="uQI-0q-3h9"/>
+                <constraint firstItem="xbJ-lI-vPY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="v2m-CM-nbZ"/>
+            </constraints>
+            <connections>
+                <outlet property="webView" destination="xbJ-lI-vPY" id="n52-EX-H1C"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
